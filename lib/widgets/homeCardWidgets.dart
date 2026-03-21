@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class HomeCard extends StatefulWidget {
-  const HomeCard({super.key});
+  const HomeCard(this.testeJson, {super.key});
+
+  final Map<String, dynamic> testeJson;
 
   @override
   State<HomeCard> createState() => _HomeCardState();
@@ -77,6 +79,11 @@ class _HomeCardState extends State<HomeCard> {
                 ),
               ),
             ],
+          ),
+          const SizedBox(height: 10),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [Text("${widget.testeJson['titulo']}")],
           ),
         ],
       ),
