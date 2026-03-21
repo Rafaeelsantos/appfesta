@@ -9,7 +9,7 @@ class Navbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
-      backgroundColor: const Color.fromARGB(255, 245, 245, 245),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       iconSize: 30,
       showUnselectedLabels: false,
       showSelectedLabels: false,
